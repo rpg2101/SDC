@@ -139,8 +139,8 @@ ubicaciones. Y deben acceder a datos compartidos . En este caso los sitemas se
 distribuye en una red LAN y debe estar disponible para todos los dispositivos de
 presentacion que se encuentren en dicha red.
 
-El funcionalidad del servidor es aceptar peticiones de conexión de dipositivos
-de adqucion y presentación de datos , registrar datos en la base de tados
+El funcionalidad del servidor es aceptar peticiones de conexión de dispositivos
+de adqucion y presentación de datos, registrar datos en la base de tados
 adaptados para una lectura apropiada.
 
 \newpage
@@ -148,7 +148,7 @@ adaptados para una lectura apropiada.
 \subsection{\textcolor{orange}{Diagrama de Despliegue}}
 \begin{figure}[h!]
  \begin{center}
-  \includegraphics[width=1\textwidth,keepaspectratio=true]{../img/Deployement.png}
+  \includegraphics[width=1\textwidth,keepaspectratio=true]{img/Deployement.png}
   \caption{Diagrama de Despliegue del Sistema}
   \label{fig:esquema}
  \end{center}
@@ -156,7 +156,7 @@ adaptados para una lectura apropiada.
 
 \subsection{\textcolor{orange}{Descripción del contexto del sistema}}
 
-EL subsistema de Adquisicion  de datos que se encuentra corriendo sobre una plataforma hardware arduino, envía datos de temperatura por medio de la interfaz Ethernet obtenidos mediante el instrumento adecuado para esto(sensor de temperatura),después de haberse identificado correctamente con el subsistema de manipulación y registro de datos el cual tendrá el rol de servidor sobre una plataforma hardware X86,donde se registran los datos de temperatura en una base de datos, mientras que el subsistema de presentación de datos que se encuentra corriendo en una plataforma hardware imx53 debidamente identificado con el servidor, es el encargado por medio de una conexión Ethernet, mostrar el dato de temperatura a través de un interfaz grafica al usuario. 
+EL subsistema de Adquisición  de datos que se encuentra corriendo sobre una plataforma hardware arduino, envía datos de temperatura por medio de la interfaz Ethernet obtenidos mediante el instrumento adecuado para esto(sensor de temperatura),después de haberse identificado correctamente con el subsistema de manipulación y registro de datos el cual tendrá el rol de servidor sobre una plataforma hardware X86,donde se registran los datos de temperatura en una base de datos, mientras que el subsistema de presentación de datos que se encuentra corriendo en una plataforma hardware imx53 debidamente identificado con el servidor, es el encargado por medio de una conexión Ethernet, mostrar el dato de temperatura a través de un interfaz gráfica al usuario. 
 Esta decisión de arquitectura se basa en el requerimiento funcional que especifica que el subsitema de de adquisición, registro, manipulación y presentación de datos  deben cumplir con una arquitectura Cliente-Servidor. 
 
 \newpage
