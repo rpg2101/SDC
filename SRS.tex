@@ -1,0 +1,436 @@
+\chapter{\textcolor{orange}{SRS - SOFTWARE REQUERIMENTS SPECIFICATION}}
+\newpage
+\section{\textcolor{orange}{Historial de Versiones}}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[RGB]{255,127,0} Vesión & Fecha & Descripción de Cambios & Autor\\
+\hline
+1.0 & 09/07/2013 & Primera Versión & Gomez P.\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\newpage
+
+\section{\textcolor{orange}{Página de Aprobaciones}}
+A continuación se listan las personas de las cuales se requiere la aceptación de
+cualquier cambio mayor de este documento.
+\begin{enumerate}
+  \item Estas aprobaciones no son necesarias si el cambio es menor.
+  \item Estas aprobaciones son necesarias si el cambio es realizado por alguna
+  persona distinta de ellas.
+\end{enumerate}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[RGB]{255,127,0} Nombre & Cargo & Fecha & Firma\\
+\hline
+Lovaisa Valeria & Resp. Ingeniería de Requerimientos & 09/07/2013 & \\
+\hline
+Gomez Pablo & Resp. Suplente & 09/07/2013 & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+\section{\textcolor{orange}{Introducción}}
+\subsection{\textcolor{orange}{Propósito y Alcance}}
+Este documento cubre el proceso de elicitación de requerimientos del sistema
+de monitoreo y registro de datos multipropósito. Este SRS tiene como objetivo
+establecer cuales son los requerimientos del sistema a nivel de usuario, como
+así también a nivel de sistema (requerimientos detallados). 
+
+\subsection{\textcolor{orange}{Acrónimos y Glosario}}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[RGB]{255,127,0} Acrónimo & Descripción \\
+\hline
+SRS & Software Requirements Specification - Especificación de Req. de Software \\
+\hline
+SRM & Software Requirements  Manager – Responsable de requerimientos del sistema\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{\textcolor{orange}{Herramientas Necesarios}}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|p{100mm}|}
+\hline
+\rowcolor[RGB]{255,127,0} Programa & Propósito \\
+\hline
+Planilla de Cálculos Generica & Para llevar en control de la trazabilidad
+de requermientos usr. vs req. de sistema y de req. vs casos de uso.\\
+\hline
+Dia & Software para la creación de diagramas UML\\
+\hline
+Google-Drive & Software necesario para llevar el control de los requerimientos.\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+\section{\textcolor{orange}{Roles}}
+\subsection{\textcolor{orange}{Responsables}}
+Las actividades de ingeniería de requerimientos del Sistema serán coordinadas en
+este proyecto por el Responsable de Requerimientos del sistema. (SRM). Este Rol
+debe ser asignado a alguno de los miembros del proyecto.
+El SRM será el responsable directo de las actividades de requerimientos del
+sistema, responder ante modificaciones en los mismos  y de mantener la
+documentación relacionada actualizada (Modificación de requerimientos , Modificación del sistema de trackeo).
+
+\subsection{\textcolor{orange}{Roles}}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor[RGB]{255,127,0} Rol & Nombre & Suplente\\
+\hline
+SRM & Lovaisa Valeria & Gomez Pablo\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+\section{\textcolor{orange}{Requerimientos}}
+\subsection{\textcolor{orange}{Listado de Requerimientos No Funcionales}}
+\subsubsection{\textcolor{orange}{Requerimientos de apariencia
+(Requerimientos de percepción)}}
+\begin{enumerate}
+\item Las interfaces gráficas deben estar elaboradas bajo el Framework Qt
+\item El sistema debe brindar una interfaz gráfica basada en ventanas ,
+formularios y menues.
+\item El sistema debe visualizarse en Español (Latinoamérica – Argentina).
+\end{enumerate}
+
+
+\subsubsection{\textcolor{orange}{Requerimientos de facilidad de utilización
+(Requerimientos de usabilidad)}}
+\begin{enumerate}
+\item El sistema debe permitir el teclado como dispositivo de entrada.
+\item El sistema debe permitir el mouse como dispositivo de entrada.
+\end{enumerate}
+
+\subsubsection{\textcolor{orange}{Requerimientos de velocidad y latencia
+(Requerimientos de desempeño)}}
+\begin{enumerate}
+\item El sistema debe tener un tiempo de respuesta menor o igual a un (1)
+segundo.
+\item El sistema debe tener acceso a una red LAN Ethernet de velocidad 100 Mbps.
+\end{enumerate}
+
+\subsubsection{\textcolor{orange}{Requerimientos de confiabilidad y
+disponibilidad (Requerimientos de desempeño)}}
+\begin{enumerate}
+\item El sistema debe estar disponible mínimo un 99\% del tiempo en el que este
+se encuentre en ejecución.
+\end{enumerate}
+
+\subsubsection{\textcolor{orange}{Requerimientos de capacidad (Requerimientos de
+desempeño)}}
+\begin{enumerate}
+\item El sistema debe tener acceso a mínimo 512 KB de memoria RAM disponibles
+para la ejecución de su módulo de presentación gráfica.
+\item El sistema debe tener acceso a mínimo 512 KB de memoria RAM disponibles
+para la ejecución de su módulo de manejo y registro de datos.
+\item El sistema debe tener acceso a mínimo un procesador de 1 GHz para la
+ejecución de su módulo de presentación gráfica.
+\item El sistema debe tener acceso a mínimo un procesador de 1.2 GHz para la
+ejecución de su módulo de manejo y registro de datos.
+\end{enumerate}
+ 
+\subsubsection{\textcolor{orange}{Requerimientos de ambiente físico esperado
+(Requerimientos operacionales y ambientales)}}
+\begin{enumerate}
+\item El módulo de adquisición de datos debe poder ejecutarse un
+microcontrolador arduino MEGA2560 situado fisicamente en sala de ambiente
+controlado (Valores sensados : Humedad y Temperatura).
+\item El módulo de manejo y registro de datos debe poder ejecutarse en un
+servidor de arquitectura x86.
+\item El módulo de presentación de datos debe poder ejecutarse en una placa de
+desarrollo iMx53 situada fisicamente en un lugar de facil acceso en sala de
+ambiente controlado.
+\end{enumerate}
+
+\subsubsection{\textcolor{orange}{Requerimientos de acceso (Requerimientos de
+seguridad)}}
+\begin{enumerate}
+\item El sistema debe registringir el acceso al módulo de manejo y registro de
+datos en el servidor mediante usuario y contraseña. 
+\item El sistema debe contar con diferentes niveles de privilegios en el acceso
+a los módulos de presentación de datos y manejo/registro de datos.
+\end{enumerate}
+
+\subsubsection{\textcolor{orange}{Requerimientos de integridad (Requerimientos
+de seguridad)}}
+\begin{enumerate}
+\item El sistema no debería permitir la modificiación de variables de
+configuración durante la adquisición de datos.
+\end{enumerate}
+
+\subsubsection{\textcolor{orange}{Requerimientos de privacidad (Requerimientos
+de seguridad)}}
+\begin{enumerate}
+\item El sistema debería guardar los datos de acceso (usuario y contraseña) en
+el equipo en que se esta ejecutando. 
+\end{enumerate}
+
+\subsubsection{\textcolor{orange}{Requerimientos de inmunidad
+(Requerimientos de seguridad)}}
+\begin{enumerate}
+\item El sistema deberá verificar que todos los datos que el usuario ingrese
+sean correctos.
+\item El sistema deberá verificar que todos los datos que el administrador
+ingrese sean correctos.
+\end{enumerate}
+
+\subsubsection{\textcolor{orange}{Requerimientos de cumplimiento
+(Requerimientos legales)}}
+\begin{enumerate}
+\item El sistema debe ser entregado en la semana del 22 al 26 de Julio.
+\end{enumerate}
+
+
+\subsubsection{\textcolor{orange}{Requerimientos de legalidad (Requerimientos
+legales)}}
+\begin{enumerate}
+\item El sistema no puede desarrollarse bajo herramientas obtenidas de forma
+ilegal (Uso de seriales copiados, cracks, keygens, entre otros)
+\end{enumerate}
+
+\subsubsection{\textcolor{orange}{Requerimientos de estándares (Requerimientos
+legales)}}
+\begin{enumerate}
+\item El código fuente del sistema debe estar debidamente documentado en
+Español (Latinoamérica – Argentina)
+\item El código debe ser desarrollado en C , C++ , Qt, mysql y debe seguir los
+estándares involucrados en dicha tarea.
+\end{enumerate}
+
+\section{\textcolor{orange}{Listado de Requerimientos Funcionales}}
+El listado completo de requerimientos se encuentra gestionado en una planilla de
+cálculo opensource en Google Drive.
+
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|p{100mm}|}
+\hline
+\rowcolor[RGB]{255,127,0} Descripción & Link \\
+\hline
+Listado Maestro de Requerimientos &
+\url{https://docs.google.com/spreadsheet/ccc?key=0AuDVazeuJzKkdGN2bUZoVmRlM3EybHUwVS1zWXNWTlE#gid=0}\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Con esta herramienta se realiza la documentación de todos los requerimientos
+del sistema y la gestión de modificaciones en los mismos. Así también se logra
+distribuir la planificación de trabajo logrando saber quien esta desarrollando
+la implementación de cada uno de estos requerimientos en ese momento.
+Los requerimientos de funcionales de usuario de dividen en grupos , como
+muestra la siguiente tabla.
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[RGB]{255,127,0} Tipo & Descripción \\
+\hline
+Adquisición & Req. relacionados a la forma de obtención de los
+datos.\\
+\hline
+Manejo y Registro & Req. relacionados a la forma en que el servidor administra
+los datos\\
+\hline
+Presentación & Req. relacionados a la forma en que se muestran los datos al
+usuario.\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+En la herramienta de gestión de requerimientos se colocarán los tags
+correspondientes para cada tipo de requerimientos.
+%Las asociaciones entre requerimientos y requerimientos se encuentran
+%documentados en la matriz de trazabilidad.
+
+%\begin{table}[!h]
+%\begin{center}
+%\begin{tabular}{|c|p{100mm}|}
+%\hline
+%\rowcolor[RGB]{255,127,0} Descripción & Link \\
+%\hline
+%Matriz de Req vs Req &
+%\url{https://docs.google.com/spreadsheet/ccc?key=0AuDVazeuJzKkdFJEbkpaVV91el9EM0NSMVFYendXdWc#gid=0}\\
+%\hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+
+Las asociaciones entre diagramas de casos de uso y requerimientos se encuentran
+documentados en la herramienta de gestion de requerimientos. 
+
+%\begin{table}[!h]
+%\begin{center}
+%\begin{tabular}{|c|p{100mm}|}
+%\hline
+%\rowcolor[RGB]{255,127,0} Descripción & Link \\
+%\hline
+%Matriz de Req vs UCs &
+%\url{https://docs.google.com/spreadsheet/ccc?key=0AuDVazeuJzKkdHR3Mm5sQUpXYldUOTlHT0JIX1l6bWc#gid=0}\\
+%\hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+
+\newpage
+\subsection{\textcolor{orange}{Tabla de requerimientos - Lista maestra de
+requerimientos}} 
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|p{30mm}|p{70mm}|p{30mm}|}
+\hline
+\rowcolor[RGB]{255,127,0} Requerimiento N & Descripción & Tipo \\
+\hline
+RQX001 & El arduino mega 2560 debe poder enviar datos tomados desde el sensor
+de temperatura y humedad al servidor por medio de una conexión serial  u
+Ethernet & Adquisición\\
+\hline
+RQX002 & El sistema de adquisición y registro de datos de temperatura debe poder
+capturar datos con un intervalo máximo de 1 segundo & Adquisición \\
+\hline
+RQX003 & Los parámetros de configuración del modulo de Adquisición deben poder
+configurarse desde el servidor de manejo y registro de datos & Adquisición \\
+\hline
+RQX004 & El modulo de adquisición debe poder identificarse con el servidor para
+iniciar el envió de datos & Adquisición \\
+\hline
+RQX005 & El sistema de manejo y registro de datos debe poder conectarse con uno
+o varios modulos de adquisicion de datos por medio de una conexión serial u
+Ethernet & Manejo y Registro \\
+\hline
+RQX006 & El sistema de registro y manejo de datos de temperatura debe poder
+manupular los  datos convirtiendolos a un formato legible para seres humanos &
+Manejo y Registro\\
+\hline
+RQX007 & El sistema de registro y manejo de datos de temperatura debe poder
+registrar y administrar todos los dispocitivos de adquisicion que se identifican
+& Manejo y Registro\\
+\hline
+RQX008 & El sistema de registro y manejo de datos de temperatura debe poder
+almacenar los datos recibidos y convertidos en una base de datos My SQL & Manejo
+y Registro\\
+\hline
+RQX009 & El sistema de registro y manejo de datos de temperatura debe poder
+registrar en una base de datos todos los dispocitivos de adquision que se
+conecten al servidor & Manejo y Registro \\
+\hline
+RQX010 & El sistema de registro y manejo de datos de temperatura debe poder 
+enviar via conexión Ethernet cada 1 segundo los datos al modulo de presentacion
+& Manejo y Registro\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|p{30mm}|p{70mm}|p{30mm}|}
+\hline
+\rowcolor[RGB]{255,127,0} Requerimiento N & Descripción & Tipo \\
+\hline
+RQX011 & El sistema de registro y manejo de datos de temperatura debe poder
+enviar el promedió para diferentes intervalos de tiempo últimos 5, 15 y 60
+minutos al modulo de presentación & Manejo y Registro\\
+\hline
+RQX012 & El sistema de registro y manejo de datos de temperatura debe poder
+verificar los valores medidos se encuentren dentro de el rango establecido &
+Manejo y Registro\\
+\hline
+RQX013 & El sistema de registro y manejo de datos de temperatura debe permitir
+configuar los valores maximos y minimos & Manejo y Registro\\
+\hline
+RQX020 & El modulo de registro y manejo de datos de temperatura debe permitir a
+un usuario adquierir privilegios de administrador mediante un password & Manejo
+y Registro\\
+\hline
+RQX014 & El modulo de presentacion de datos debe poder conectarse con un
+servidor via conecxion Ethernet & Presentación\\
+\hline
+RQX015 &  El modulo de presentacion de datos debe poder mostrar los datos de
+temperatura enviados desde el servidor en al menos dos escalas distintas celsius
+y farenheit & Presentación\\
+\hline
+RQX016 & El modulo de presentacion de datos debe poder indicar graficamente si
+los valores de temperatura se encuentran fuera del rango permitido &
+Presentación\\
+\hline
+RQX017 & El modulo de presentacion de datos debe permitir cambiar la direccion
+ip del servidor & Presentación\\
+\hline
+RQX018 & El modulo de presentación de datos debe permitir a un administrador
+seleccionar algún dispositivo de adquisición de datos conectado al servidor &
+Presentación\\
+\hline
+RQX019 & El modulo de presentación de datos debe permitir a un administrador
+acceder a las configuraciones por medio de usuario y contraseña & Presentación\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+\subsection{\textcolor{orange}{Diagramas de Secuencia}}
+\subsubsection{\textcolor{orange}{Adquisición, registro de datos y presentación de datos}}
+% === Figura ====
+\begin{figure}[h!]
+ \begin{center}
+  \includegraphics[width=1\textwidth,keepaspectratio=true]{../img/Diagrama_secuencia.png}
+  \caption{Adquisición y Registro de Datos}
+  \label{fig:esquema}
+ \end{center}
+\end{figure}
+% ===============
+\subsubsection{\textcolor{orange}{Registro de nuevo dipositivo de aquisición}}
+% === Figura ====
+\begin{figure}[h!]
+ \begin{center}
+  \includegraphics[width=0.5\textwidth,keepaspectratio=true]{../img/agregardisp.png}
+  \caption{Registro de Nuevo Dispositivo de Adquisición}
+  \label{fig:esquema}
+ \end{center}
+\end{figure}
+% ===============
+\newpage
+\subsection{\textcolor{orange}{Diagramas de Actividades}}
+% === Figura ====
+\begin{figure}[h!]
+ \begin{center}
+  \includegraphics[width=1\textwidth,keepaspectratio=true]{../img/diagactiv.png}
+ \caption{Flujo de Dato de Temperatura del Sistema}
+  \label{fig:esquema}
+ \end{center}
+\end{figure}
+% ===============
+\newpage
+\subsection{\textcolor{orange}{Diagramas de Casos de Uso}}
+\begin{figure}[h!]
+ \begin{center}
+  \includegraphics[width=1\textwidth,keepaspectratio=true]{../img/usecases.png}
+  \caption{Diagrama General de Casos de Uso}
+  \label{fig:esquema}
+ \end{center}
+\end{figure}

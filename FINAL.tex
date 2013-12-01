@@ -1,0 +1,116 @@
+\documentclass[a4paper,11pt]{book} 
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage{graphicx}
+
+\usepackage{colortbl}
+\usepackage{color}
+
+\usepackage{hyperref}
+
+\usepackage[margin=1in]{geometry}
+\pagestyle{plain}
+
+%\usepackage{fancyhdr} 
+%\usepackage{lastpage}
+%\usepackage{float} 
+%\floatstyle{boxed} 
+%\restylefloat{figure} 
+%\pagestyle{fancy}
+
+\definecolor{orange}{RGB}{255,127,0}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+\title{\textcolor{orange}{Informe Trabajo Final}}
+\author{Grupo Lovaisa-Gomez \\ Facultad de Ciencias Físicas , Exactas y
+Naturales\\ Sistemas de Computación}
+
+\begin{document}
+
+%\lhead{\includegraphics[width=1\textwidth]{../img/encab.png}}
+%\lfoot{{\includegraphics[width=1\textwidth]{../img/pie.png}}}
+%\rfoot{\thepage}
+
+\maketitle
+\tableofcontents
+
+
+\chapter{\textcolor{orange}{INTRODUCCION}}
+
+\newpage
+\section{\textcolor{orange}{Introducción}}
+El siguiente informe refleja el trabajo realizado para el desarrollo de un
+sistema de monitoreo y registro de datos multiplataforma correspondiente a la
+materia Sistemas de Computación. El objetivo principal de este trabajo es
+realizar un sistema formado por tres subsistemas que interactuan por
+conexiones Serial y Ethernet. El primer subsistema consiste en una plataforma
+basada en un microcontrolador Atmel - Arduino(R) Mega 2560 - para la
+adquisición de datos en Tiempo Real. Este consta de un sensor de temperatura
+conectado a un puerto del ADC de la placa el cual envía los valores medidos de
+temperatura al servidor por medio de una conexión Serial sin ningun tipo de
+procesamiento o ajuste de señal para evitar cualquier demora en la recepción de
+los datos. 
+En la etapa intermedia los datos recibidos por el servidor, que
+corre sobre una arquitectura x86, son procesados para obtener un formato y
+escala legible por humanos (Grados Celsius), para luego ser almacenados en una
+base de datos mysql. La recepción de datos se realiza en un proceso
+independiente que a medida que los datos van arrivando los almacena en un buffer
+circular en memoria compartida. Luego, otro proceso va recolectando los datos
+almacenados en el buffer los escala y almacena en la base de datos.
+En la etapa final se cuenta con una placa iMX53 con un SO Linux embebido que da
+soporte a una aplicación con interfaz gráfica desarrollada en Qt utilizada para
+acceder y presentar los datos almacenados en la base de datos del servidor. La
+conexión de la iMX53 y el servidor x86 se realiza mediante Ethernet. Desde la
+aplicación gráfica puden establecerse niveles de temperatura Max y Min que
+activarán indicaciones visuales en cada caso.   
+% === Figura ====
+\begin{figure}[h!]
+ \begin{center}
+  \includegraphics[width=0.5\textwidth,keepaspectratio=true]{../img/fig1.png}
+  \caption{Esquema general del sistema}
+  \label{fig:esquema}
+ \end{center}
+\end{figure}
+% ===============
+Se implementaron métodos de toma de requerimientos , estimaciones ,
+diseño de arquitectura, implementación, testing, procedimientos y técnicas
+de Ing del Software.
+
+\section{\textcolor{orange}{Desarrollo}}
+Durante el desarrollo del trabajo se relizaron los siguientes documentos de
+diseño
+
+\vspace{1cm}
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor[RGB]{255,127,0} Acrónimo & Documento \\
+%\hline
+%SCMP & Software Configuration Managment Plan & yyy\\
+\hline
+SRS & Software Requerimients Specification \\
+\hline
+ADD & Arquitecture Design Documentation \\
+\hline
+SSD & Software Design Description \\
+\hline
+STD & Software Test Documentation \\
+\hline
+%SRN & Software Release Note & yyy\\
+%\hline
+%SPMP & Software Project Management Plan & yyy\\
+%\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\include{./SRS}
+\include{./ADD}
+\include{./SDD}
+\include{./STD}
+\end{document}
