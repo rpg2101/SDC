@@ -650,37 +650,39 @@ acceder a las configuraciones por medio de usuario y contraseña & Presentación
 	%\label{tab:requsr1}
 		\end{table}
 
+\clearpage
 \subsection{\textcolor{orange}{Tarjetas CRC}}
+ 
+ Con lo planteado anteriormente en LEL y los escenarios planteados se generan las siguientes clases candidatas:
+ 		
+ 		\begin{table}[h]
+ 		\centering
+ 		\begin{tabular}{ p{4cm} | p{9.5cm} }
+ 		\hline 
+ 		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+ 		\hline
+ 		Tarjeta CRC primaria & ServidorManejoyRegistro \\
+ 		\hline
+ 		Responsabilidades & \begin{itemize}
+ 								\item Solicita el envío de datos al sistema de adquisición 
+ 								\item Recibe datos del sistema de adquisición
+ 								\item Almacena datos en su base de datos
+ 								\item Establece conexión con el sistema de adquisición el sistema de presentación de datos
+ 								\item Envía datos al sistema de presentación de datos en respuesta a una solicitud
+ 							 \end{itemize} \\	
+ 		\hline
+ 		Colaboradores &  Sistema de adquisición , sistema de presentación de datos\\
+ 		\hline
+ 		\end{tabular}
+ 		\caption{CRC primaria ServidorManejoyRegistro}
+ 	%\label{tab:requsr1}
+ 		\end{table}
 
-Con lo planteado anteriormente en LEL y los escenarios planteados se generan las siguientes clases candidatas:
-\begin{table}[h!]
+		\begin{table}[h]
 		\centering
 		\begin{tabular}{ p{4cm} |p{9.5cm} }
-		\hline 
-		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
 		\hline
-		Tarjeta CRC primaria & ServidorManejoyRegistro \\
-		\hline
-		Responsabilidades & \begin{itemize}
-								\item Solicita el envío de datos al sistema de adquisición 
-								\item Recibe datos del sistema de adquisición
-								\item Almacena datos en su base de datos
-								\item Establece conexión con el sistema de adquisición el sistema de presentación de datos
-								\item Envía datos al sistema de presentación de datos en respuesta a una solicitud
-							 \end{itemize} \\	
-		\hline
-		Colaboradores&  Sistema de adquisición , sistema de presentación de datos\\
-
-		\hline
-		\end{tabular}
-		\caption{CRC primaria ServidorManejoyRegistro}
-	%\label{tab:requsr1}
-		\end{table}
-\begin{table}[h!]
-		\centering
-		\begin{tabular}{ p{4cm} |p{9.5cm} }
-		\hline 
-		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
 		\hline
 		Tarjeta CRC primaria & ClientePresentación\\
 		\hline
@@ -688,11 +690,10 @@ Con lo planteado anteriormente en LEL y los escenarios planteados se generan las
 							\item Solicita datos al sistema de manejo y registro
 							\item Recibe datos del sistema de manejo y registro
 							\item Establece conexión con el sistema de manejo y registro de datos
-							\item Envía condiciones de alarmas al sistema de registro
-y manejo de datos								
-							 \end{itemize} \\	
+							\item Envía condiciones de alarmas al sistema de registro y manejo de datos
+							\end{itemize} \\
 		\hline
-		Colaboradores& sistema de manejo y registro de datos, administrador y usuario\\
+		Colaboradores & sistema de manejo y registro de datos, administrador y usuario\\
 
 		\hline
 		\end{tabular}
@@ -700,10 +701,10 @@ y manejo de datos
 	%\label{tab:requsr1}
 		\end{table}
 
-\begin{table}[h!]
+		\begin{table}[h]
 		\centering
 		\begin{tabular}{ p{4cm} |p{9.5cm} }
-		\hline 
+		\hline
 		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
 		\hline
 		Tarjeta CRC secundarias & ClienteConexión\\
@@ -711,21 +712,20 @@ y manejo de datos
 		Responsabilidades & \begin{itemize}
 								\item Establecer la conexión con el sistema de registro y manejo de datos
 								\item Envío de datos datos al sistema de registro y manejo de datos
-							 \end{itemize} \\	
+							 \end{itemize} \\
 		\hline
-		Colaboradores&  Sensor, sistema de adquisición \\
-
+		Colaboradores &  Sensor, sistema de adquisición \\
 		\hline
 		\end{tabular}
 		\caption{CRC secundaria ClienteConexión}
 	%\label{tab:requsr1}
 		\end{table}
 
-\begin{table}[h!]
+		\begin{table}[h]
 		\centering
 		\begin{tabular}{ p{4cm} |p{9.5cm} }
-		\hline 
-		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		\multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
 		\hline
 		Tarjeta CRC secundaria & ConexiónServidor\\
 		\hline
@@ -734,21 +734,19 @@ y manejo de datos
 								\item Establecer la conexión con el sistema de presentación
 								\item Recibir datos del sistema de adquisición
 								\item Enviar datos al módulo de presentación
-							 \end{itemize} \\	
+							 \end{itemize} \\
 		\hline
 		Colaboradores& Sistema de manejo y registro , Sistema de adquisición\\
-
 		\hline
 		\end{tabular}
 		\caption{Tarjeta CRC secundaria ConexiónServidor}
 	%\label{tab:requsr1}
 		\end{table}
 
-
-\begin{table}[h!]
+		\begin{table}[h]
 		\centering
 		\begin{tabular}{ p{4cm} |p{9.5cm} }
-		\hline 
+		\hline
 		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
 		\hline
 		Tarjeta CRC secundaria & BaseDeDatos\\
@@ -756,7 +754,7 @@ y manejo de datos
 		Responsabilidades & \begin{itemize}
 								\item Establecer conexión con el gestor de base de datos
 								\item Registrar datos recibidos del sistema de adquisición
-								 \end{itemize} \\	
+								 \end{itemize} \\
 		\hline
 		Colaboradores& Sistema de adquisición \\
 
@@ -766,10 +764,11 @@ y manejo de datos
 	%\label{tab:requsr1}
 		\end{table}
 
-\begin{table}[h!]
+
+		\begin{table}[h]
 		\centering
 		\begin{tabular}{ p{4cm} |p{9.5cm} }
-		\hline 
+		\hline
 		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
 		\hline
 		Tarjeta CRC secundaria & ConexiónClienteVista\\
@@ -778,7 +777,7 @@ y manejo de datos
 								\item Establecer conexión con el sistema de manejo y registro
 								\item Recibir datos del sistema de manejo y recepción
 								\item Enviar mensajes de estado de alarmas al sistema de manejo y registro de datos
-							 \end{itemize} \\	
+							 \end{itemize} \\
 		\hline
 		Colaboradores& Sistema de presentación , Sistema de manejo y registro\\
 		\hline
@@ -788,11 +787,10 @@ y manejo de datos
 	%\label{tab:requsr1}
 		\end{table}
 
-
-\begin{table}[h!]
+		\begin{table}[h]
 		\centering
 		\begin{tabular}{ p{4cm} |p{9.5cm} }
-		\hline 
+		\hline
 		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
 		\hline
 		Tarjeta CRC secundaria & VistaDatos\\
@@ -800,10 +798,9 @@ y manejo de datos
 		Responsabilidades & \begin{itemize}
 								\item Mostrar gráficamente los datos recibidos del módulo de manejo y registro
 								\item Mostrar estado de alarmas de valor mínimo y máximo
-								 \end{itemize} \\	
+								 \end{itemize} \\
 		\hline
 		Colaboradores& Sistema de presentación \\
-
 		\hline
 		\end{tabular}
 		\caption{Tarjeta CRC secundaria VistaDatos}
