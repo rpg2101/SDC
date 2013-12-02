@@ -1,11 +1,11 @@
-\chapter{\textcolor{orange}{SRS - SOFTWARE REQUERIMENTS SPECIFICATION}}
+\chapter{\textcolor[gray]{.2}{SRS - SOFTWARE REQUERIMENTS SPECIFICATION}}
 \newpage
-\section{\textcolor{orange}{Historial de Versiones}}
+\section{\textcolor[gray]{.2}{Historial de Versiones}}
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-\rowcolor[RGB]{255,127,0} Vesión & Fecha & Descripción de Cambios & Autor\\
+\rowcolor[gray]{.8} Vesión & Fecha & Descripción de Cambios & Autor\\
 \hline
 1.0 & 09/07/2013 & Primera Versión & Gomez P.\\
 \hline
@@ -16,7 +16,7 @@
 \end{center}
 \end{table}
 
-\section{\textcolor{orange}{Página de Aprobaciones}}
+\section{\textcolor[gray]{.2}{Página de Aprobaciones}}
 A continuación se listan las personas de las cuales se requiere la aceptación de cualquier cambio mayor de este documento.
 \begin{enumerate}
   \item Estas aprobaciones no son necesarias si el cambio es menor.
@@ -27,7 +27,7 @@ A continuación se listan las personas de las cuales se requiere la aceptación 
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-\rowcolor[RGB]{255,127,0} Nombre & Cargo & Fecha & Firma\\
+\rowcolor[gray]{.8} Nombre & Cargo & Fecha & Firma\\
 \hline
 Lovaisa Valeria & Resp. Ingeniería de Requerimientos & 09/07/2013 & \\
 \hline
@@ -39,19 +39,19 @@ Gomez Pablo & Resp. Suplente & 09/07/2013 & \\
 
 
 \newpage
-\section{\textcolor{orange}{Introducción}}
-\subsection{\textcolor{orange}{Propósito y Alcance}}
+\section{\textcolor[gray]{.2}{Introducción}}
+\subsection{\textcolor[gray]{.2}{Propósito y Alcance}}
 Este documento cubre el proceso de elicitación de requerimientos del sistema
 de monitoreo y registro de datos multipropósito. Este SRS tiene como objetivo
 establecer cuales son los requerimientos del sistema a nivel de usuario, como
 así también a nivel de sistema (requerimientos detallados). 
 
-\subsection{\textcolor{orange}{Acrónimos y Glosario}}
+\subsection{\textcolor[gray]{.2}{Acrónimos y Glosario}}
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|c|}
 \hline
-\rowcolor[RGB]{255,127,0} Acrónimo & Descripción \\
+\rowcolor[gray]{.8} Acrónimo & Descripción \\
 \hline
 SRS & Software Requirements Specification - Especificación de Req. de Software \\
 \hline
@@ -61,12 +61,12 @@ SRM & Software Requirements  Manager – Responsable de requerimientos del siste
 \end{center}
 \end{table}
 
-\subsection{\textcolor{orange}{Herramientas Necesarios}}
+\subsection{\textcolor[gray]{.2}{Herramientas Necesarios}}
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|p{100mm}|}
 \hline
-\rowcolor[RGB]{255,127,0} Programa & Propósito \\
+\rowcolor[gray]{.8} Programa & Propósito \\
 \hline
 Planilla de Cálculos Generica & Para llevar en control de la trazabilidad
 de requermientos usr. vs req. de sistema y de req. vs casos de uso.\\
@@ -80,18 +80,18 @@ Google-Drive & Software necesario para llevar el control de los requerimientos.\
 \end{table}
 
 %\newpage
-%\section{\textcolor{orange}{Roles}}
-%\subsection{\textcolor{orange}{Responsables}}
+%\\section{\\textcolor[gray]{.2}{Roles}}
+%\subsection{\textcolor[gray]{.2}{Responsables}}
 %Las actividades de ingeniería de requerimientos del Sistema serán coordinadas en este proyecto por el Responsable de Requerimientos del sistema. (SRM). Este Rol debe ser asignado a alguno de los miembros del proyecto.
 %El SRM será el responsable directo de las actividades de requerimientos del
 %sistema, responder ante modificaciones en los mismos  y de mantener la documentación relacionada actualizada (Modificación de requerimientos , Modificación del sistema de trackeo).
 
-%\subsection{\textcolor{orange}{Roles}}
+%\subsection{\textcolor[gray]{.2}{Roles}}
 %\begin{table}[!h]
 %\begin{center}
 %\begin{tabular}{|c|c|c|}
 %\hline
-%\rowcolor[RGB]{255,127,0} Rol & Nombre & Suplente\\
+%\rowcolor[gray]{.8} Rol & Nombre & Suplente\\
 %\hline
 %SRM & Lovaisa Valeria & Gomez Pablo\\
 %\hline
@@ -100,9 +100,9 @@ Google-Drive & Software necesario para llevar el control de los requerimientos.\
 %\end{table}
 
 \newpage
-\section{\textcolor{orange}{Requerimientos}}
-\subsection{\textcolor{orange}{Listado de Requerimientos No Funcionales}}
-\subsubsection{\textcolor{orange}{Requerimientos de apariencia
+\section{\textcolor[gray]{.2}{Requerimientos}}
+\subsection{\textcolor[gray]{.2}{Listado de Requerimientos No Funcionales}}
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de apariencia
 (Requerimientos de percepción)}}
 \begin{enumerate}
 \item Las interfaces gráficas deben estar elaboradas bajo el Framework Qt
@@ -112,14 +112,14 @@ formularios y menues.
 \end{enumerate}
 
 
-\subsubsection{\textcolor{orange}{Requerimientos de facilidad de utilización
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de facilidad de utilización
 (Requerimientos de usabilidad)}}
 \begin{enumerate}
 \item El sistema debe permitir el teclado como dispositivo de entrada.
 \item El sistema debe permitir el mouse como dispositivo de entrada.
 \end{enumerate}
 
-\subsubsection{\textcolor{orange}{Requerimientos de velocidad y latencia
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de velocidad y latencia
 (Requerimientos de desempeño)}}
 \begin{enumerate}
 \item El sistema debe tener un tiempo de respuesta menor o igual a un (1)
@@ -127,14 +127,14 @@ segundo.
 \item El sistema debe tener acceso a una red LAN Ethernet de velocidad 100 Mbps.
 \end{enumerate}
 
-\subsubsection{\textcolor{orange}{Requerimientos de confiabilidad y
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de confiabilidad y
 disponibilidad (Requerimientos de desempeño)}}
 \begin{enumerate}
 \item El sistema debe estar disponible mínimo un 99\% del tiempo en el que este
 se encuentre en ejecución.
 \end{enumerate}
 
-\subsubsection{\textcolor{orange}{Requerimientos de capacidad (Requerimientos de
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de capacidad (Requerimientos de
 desempeño)}}
 \begin{enumerate}
 \item El sistema debe tener acceso a mínimo 512 KB de memoria RAM disponibles
@@ -147,7 +147,7 @@ ejecución de su módulo de presentación gráfica.
 ejecución de su módulo de manejo y registro de datos.
 \end{enumerate}
  
-\subsubsection{\textcolor{orange}{Requerimientos de ambiente físico esperado
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de ambiente físico esperado
 (Requerimientos operacionales y ambientales)}}
 \begin{enumerate}
 \item El módulo de adquisición de datos debe poder ejecutarse un
@@ -160,7 +160,7 @@ desarrollo iMx53 situada fisicamente en un lugar de facil acceso en sala de
 ambiente controlado.
 \end{enumerate}
 
-\subsubsection{\textcolor{orange}{Requerimientos de acceso (Requerimientos de
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de acceso (Requerimientos de
 seguridad)}}
 \begin{enumerate}
 \item El sistema debe registringir el acceso al módulo de manejo y registro de
@@ -169,21 +169,21 @@ datos en el servidor mediante usuario y contraseña.
 a los módulos de presentación de datos y manejo/registro de datos.
 \end{enumerate}
 
-\subsubsection{\textcolor{orange}{Requerimientos de integridad (Requerimientos
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de integridad (Requerimientos
 de seguridad)}}
 \begin{enumerate}
 \item El sistema no debería permitir la modificiación de variables de
 configuración durante la adquisición de datos.
 \end{enumerate}
 
-\subsubsection{\textcolor{orange}{Requerimientos de privacidad (Requerimientos
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de privacidad (Requerimientos
 de seguridad)}}
 \begin{enumerate}
 \item El sistema debería guardar los datos de acceso (usuario y contraseña) en
 el equipo en que se esta ejecutando. 
 \end{enumerate}
 
-\subsubsection{\textcolor{orange}{Requerimientos de inmunidad
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de inmunidad
 (Requerimientos de seguridad)}}
 \begin{enumerate}
 \item El sistema deberá verificar que todos los datos que el usuario ingrese
@@ -192,21 +192,21 @@ sean correctos.
 ingrese sean correctos.
 \end{enumerate}
 
-\subsubsection{\textcolor{orange}{Requerimientos de cumplimiento
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de cumplimiento
 (Requerimientos legales)}}
 \begin{enumerate}
 \item El sistema debe ser entregado en la semana del 22 al 26 de Julio.
 \end{enumerate}
 
 
-\subsubsection{\textcolor{orange}{Requerimientos de legalidad (Requerimientos
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de legalidad (Requerimientos
 legales)}}
 \begin{enumerate}
 \item El sistema no puede desarrollarse bajo herramientas obtenidas de forma
 ilegal (Uso de seriales copiados, cracks, keygens, entre otros)
 \end{enumerate}
 
-\subsubsection{\textcolor{orange}{Requerimientos de estándares (Requerimientos
+\subsubsection{\textcolor[gray]{.2}{Requerimientos de estándares (Requerimientos
 legales)}}
 \begin{enumerate}
 \item El código fuente del sistema debe estar debidamente documentado en
@@ -217,7 +217,7 @@ estándares involucrados en dicha tarea.
 
 
 \newpage
-\section{\textcolor{orange}{Listado de Requerimientos Funcionales}}
+\section{\textcolor[gray]{.2}{Listado de Requerimientos Funcionales}}
 El listado completo de requerimientos se encuentra gestionado en una planilla de
 cálculo opensource en Google Drive.
 
@@ -226,7 +226,7 @@ cálculo opensource en Google Drive.
 \begin{center}
 \begin{tabular}{|c|p{100mm}|}
 \hline
-\rowcolor[RGB]{255,127,0} Descripción & Link \\
+\rowcolor[gray]{.8} Descripción & Link \\
 \hline
 Listado Maestro de Requerimientos &
 \url{https://docs.google.com/spreadsheet/ccc?key=0AuDVazeuJzKkdGN2bUZoVmRlM3EybHUwVS1zWXNWTlE#gid=0}\\
@@ -246,7 +246,7 @@ muestra la siguiente tabla.
 \begin{center}
 \begin{tabular}{|c|c|}
 \hline
-\rowcolor[RGB]{255,127,0} Tipo & Descripción \\
+\rowcolor[gray]{.8} Tipo & Descripción \\
 \hline
 Adquisición & Req. relacionados a la forma de obtención de los
 datos.\\
@@ -270,7 +270,7 @@ correspondientes para cada tipo de requerimientos.
 %\begin{center}
 %\begin{tabular}{|c|p{100mm}|}
 %\hline
-%\rowcolor[RGB]{255,127,0} Descripción & Link \\
+%\rowcolor[gray]{.8} Descripción & Link \\
 %\hline
 %Matriz de Req vs Req &
 %\url{https://docs.google.com/spreadsheet/ccc?key=0AuDVazeuJzKkdFJEbkpaVV91el9EM0NSMVFYendXdWc#gid=0}\\
@@ -286,7 +286,7 @@ documentados en la herramienta de gestión de requerimientos.
 %\begin{center}
 %\begin{tabular}{|c|p{100mm}|}
 %\hline
-%\rowcolor[RGB]{255,127,0} Descripción & Link \\
+%\rowcolor[gray]{.8} Descripción & Link \\
 %\hline
 %Matriz de Req vs UCs &
 %\url{https://docs.google.com/spreadsheet/ccc?key=0AuDVazeuJzKkdHR3Mm5sQUpXYldUOTlHT0JIX1l6bWc#gid=0}\\
@@ -296,13 +296,13 @@ documentados en la herramienta de gestión de requerimientos.
 %\end{table}
 
 \newpage
-\subsection{\textcolor{orange}{Tabla de requerimientos - Lista maestra de
+\subsection{\textcolor[gray]{.2}{Tabla de requerimientos - Lista maestra de
 requerimientos}} 
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{|p{30mm}|p{70mm}|p{30mm}|}
 \hline
-\rowcolor[RGB]{255,127,0} Requerimiento N & Descripción & Tipo \\
+\rowcolor[gray]{.8} Requerimiento N & Descripción & Tipo \\
 \hline
 RQX001 & El arduino mega 2560 debe poder enviar datos tomados desde el sensor
 de temperatura y humedad al servidor por medio de una conexión serial  u
@@ -351,7 +351,7 @@ enviar via conexión Ethernet cada 1 segundo los datos al modulo de presentacion
 \begin{center}
 \begin{tabular}{|p{30mm}|p{70mm}|p{30mm}|}
 \hline
-\rowcolor[RGB]{255,127,0} Requerimiento N & Descripción & Tipo \\
+\rowcolor[gray]{.8} Requerimiento N & Descripción & Tipo \\
 \hline
 RQX011 & El sistema de registro y manejo de datos de temperatura debe poder
 enviar el promedió para diferentes intervalos de tiempo últimos 5, 15 y 60
@@ -394,8 +394,8 @@ acceder a las configuraciones por medio de usuario y contraseña & Presentación
 \end{table}
 
 \newpage
-\subsection{\textcolor{orange}{Diagramas de Secuencia}}
-\subsubsection{\textcolor{orange}{Adquisición, registro de datos y presentación de datos}}
+\subsection{\textcolor[gray]{.2}{Diagramas de Secuencia}}
+\subsubsection{\textcolor[gray]{.2}{Adquisición, registro de datos y presentación de datos}}
 % === Figura ====
 \begin{figure}[h!]
  \begin{center}
@@ -405,7 +405,7 @@ acceder a las configuraciones por medio de usuario y contraseña & Presentación
  \end{center}
 \end{figure}
 % ===============
-\subsubsection{\textcolor{orange}{Registro de nuevo dipositivo de aquisición}}
+\subsubsection{\textcolor[gray]{.2}{Registro de nuevo dipositivo de aquisición}}
 % === Figura ====
 \begin{figure}[h!]
  \begin{center}
@@ -416,7 +416,7 @@ acceder a las configuraciones por medio de usuario y contraseña & Presentación
 \end{figure}
 
 \newpage
-\subsection{\textcolor{orange}{Diagramas de Actividades}}
+\subsection{\textcolor[gray]{.2}{Diagramas de Actividades}}
 % === Figura ====
 \begin{figure}[h!]
  \begin{center}
@@ -427,7 +427,7 @@ acceder a las configuraciones por medio de usuario y contraseña & Presentación
 \end{figure}
 
 
-\subsection{\textcolor{orange}{Diagramas de Casos de Uso}}
+\subsection{\textcolor[gray]{.2}{Diagramas de Casos de Uso}}
 \begin{figure}[h!]
  \begin{center}
   \includegraphics[width=1\textwidth,keepaspectratio=true]{img/usecases.png}
@@ -437,7 +437,7 @@ acceder a las configuraciones por medio de usuario y contraseña & Presentación
 \end{figure}
 
 \newpage
-\subsection{\textcolor{orange}{LEL – Léxico Extendido del Lenguaje}}
+\subsection{\textcolor[gray]{.2}{LEL – Léxico Extendido del Lenguaje}}
 	
 		\begin{table}[h!]
 		\centering
@@ -556,7 +556,7 @@ acceder a las configuraciones por medio de usuario y contraseña & Presentación
 
 
 \newpage
-\subsection{\textcolor{orange}{Escenarios}}
+\subsection{\textcolor[gray]{.2}{Escenarios}}
 
 		\begin{table}[h!]
 		\centering
@@ -638,7 +638,7 @@ acceder a las configuraciones por medio de usuario y contraseña & Presentación
 		\end{table}
 
 \clearpage
-\subsection{\textcolor{orange}{Tarjetas CRC}}
+\subsection{\textcolor[gray]{.2}{Tarjetas CRC}}
  
  Con lo planteado anteriormente en LEL y los escenarios planteados se generan las siguientes clases candidatas:
  		

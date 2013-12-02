@@ -1,11 +1,11 @@
-\chapter{\textcolor{orange}{STD - SOFTWARE TEST DOCUMENTATION}}
+\chapter{\textcolor[gray]{.8}{STD - SOFTWARE TEST DOCUMENTATION}}
 \newpage
-\section{\textcolor{orange}{Historial de Versiones}}
+\section{\textcolor[gray]{.2}{Historial de Versiones}}
 \begin{table}[!h]
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-\rowcolor[RGB]{255,127,0} Vesión & Fecha & Descripción de Cambios & Autor\\
+\rowcolor[gray]{.8} Vesión & Fecha & Descripción de Cambios & Autor\\
 \hline
 1.0.0 & 12/09/2013 & Primera Versión del documento de testing del sistema & Lovaisa V.\\
 \hline
@@ -18,7 +18,7 @@
 \end{table}
 \newpage
 
-\section{\textcolor{orange}{Página de Aprobaciones}}
+\section{\textcolor[gray]{.2}{Página de Aprobaciones}}
 A continuación se listan las personas de las cuales se requiere la aceptación de cualquier cambio mayor de este documento.
 \begin{enumerate}
   \item Estas aprobaciones no son necesarias si el cambio es menor.
@@ -29,7 +29,7 @@ A continuación se listan las personas de las cuales se requiere la aceptación 
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-\rowcolor[RGB]{255,127,0} Nombre & Cargo & Fecha & Firma\\
+\rowcolor[gray]{.8} Nombre & Cargo & Fecha & Firma\\
 \hline
 Lovaisa Valeria & Resp. Testing & 12/09/2013 & \\
 \hline
@@ -40,16 +40,16 @@ Gomez Pablo & Resp. Suplente & 12/09/2013 & \\
 \end{table}
 
 \newpage
-\section{\textcolor{orange}{Introducción}}
-\subsection{\textcolor{orange}{Propósito y Alcance}}
+\section{\textcolor[gray]{.2}{Introducción}}
+\subsection{\textcolor[gray]{.2}{Propósito y Alcance}}
 Este documento cubre el proceso de prueba del sistema de monitoreo y registro de datos multipropósito. Este STD tiene como objetivo establecer cuales seràn los casos de pruebas que se realizaràn y como deberàn documentarse los resultados obtenidos.
 
-\subsection{\textcolor{orange}{Acrónimos y Glosario}}
+\subsection{\textcolor[gray]{.2}{Acrónimos y Glosario}}
 \begin{table}[!h]
 \begin{center}
 \begin{tabular}{|c|c|}
 \hline
-\rowcolor[RGB]{255,127,0} Acrónimo & Descripción \\
+\rowcolor[gray]{.8} Acrónimo & Descripción \\
 \hline
 STD & Software Test Document - Documento de prueba del sistema. \\
 \hline
@@ -59,12 +59,12 @@ STM & Software Testing Manager – Responsable de prueba del sistema\\
 \end{center}
 \end{table}
 
-\subsection{\textcolor{orange}{Herramientas Necesarios}}
+\subsection{\textcolor[gray]{.2}{Herramientas Necesarios}}
 \begin{table}[!h]
 \begin{center}
 \begin{tabular}{|c|p{100mm}|}
 \hline
-\rowcolor[RGB]{255,127,0} Programa & Propósito \\
+\rowcolor[gray]{.8} Programa & Propósito \\
 \hline
 Google Driver & Software necesario para llevar los documentos de diseño empleados.\\
 %de requermientos usr. vs req. de sistema y de req. vs casos de uso.\\
@@ -80,8 +80,8 @@ CUnit plugin & SPlug-in necesario para el desarrollo de pruebas unitarias.\\
 \end{table}
 
 \newpage
-\section{\textcolor{orange}{Roles}}
-\subsection{\textcolor{orange}{Responsables}}
+\section{\textcolor[gray]{.2}{Roles}}
+\subsection{\textcolor[gray]{.2}{Responsables}}
 
 Las actividades de pruebas del Sistema serán coordinadas en este proyecto por el Responsable de pruebas del sistema. (STM). Este Rol debe ser asignado a alguno de los miembros del proyecto.
 
@@ -89,12 +89,12 @@ El STM será el responsable directo de las actividades de testing, responder ant
 
 
 
-\subsection{\textcolor{orange}{Roles}}
+\subsection{\textcolor[gray]{.2}{Roles}}
 \begin{table}[!h]
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
-\rowcolor[RGB]{255,127,0} Rol & Nombre & Suplente\\
+\rowcolor[gray]{.8} Rol & Nombre & Suplente\\
 \hline
 STM & Lovaisa Valeria & Gomez Pablo\\
 \hline
@@ -103,71 +103,71 @@ STM & Lovaisa Valeria & Gomez Pablo\\
 \end{table}
 
 \newpage
-\section{\textcolor{orange}{Plan de pruebas - Test Plan}}
-\subsection{\textcolor{orange}{Descripción de la herramientas utilizada}}
+\section{\textcolor[gray]{.2}{Plan de pruebas - Test Plan}}
+\subsection{\textcolor[gray]{.2}{Descripción de la herramientas utilizada}}
 
 Se utilizará la herramienta CUnit integrada a Netbeans. Esta herramienta permitirá obtener el Pass/Fail ratio , determinar paquetes de UT a correr como Sanity Tests e  identificar bugs.
 
-\subsection{\textcolor{orange}{Elementos a probar - Test elements}}
+\subsection{\textcolor[gray]{.2}{Elementos a probar - Test elements}}
 
 Se realizarán pruebas unitarias a todos los elementos involucrados en el sistema considerados de importancia significativa por el STM. Deben generarse al menos 3 UT por clase generada incrementando este valor según la importancia de la clase en cuestión (a determinar por el STM).
 
 	Se seleccionarán una serie de UTs , de las clases consideradas por el STM como vitales para el funcionamiento del sistema. Con estos UTs se generán al menos 3 Sanity Tests , los cuales garantizan el funcionamiento adecuado del sistema en su mayor parte.
 
 
-\subsection{\textcolor{orange}{Caracterìsticas a probar - Features to be Tested}}
+\subsection{\textcolor[gray]{.2}{Caracterìsticas a probar - Features to be Tested}}
 
 Se deberán realizar pruebas unitarias para todos las nuevas características implementadas (Salvo decisión del STM) . Deben generarse los UTs para cada caso antes de desarrollar la implementación de la nueva funcionalidad. Este enfoque permitirá garantizar una integración de código con la menor tasa de defectos para conservar en todos momento una versión construíble en el repositorio Gib-Hub.
 
-\subsection{\textcolor{orange}{Características a no probar - Features not to be Tested }}
+\subsection{\textcolor[gray]{.2}{Características a no probar - Features not to be Tested }}
 
 Solo estarán excluídas de ser probadas las funcionalidades que el STM designe como de baja prioridad. 
 
-\subsection{\textcolor{orange}{Criterio de aceptación - Item Pass-Fail criteria }}
+\subsection{\textcolor[gray]{.2}{Criterio de aceptación - Item Pass-Fail criteria }}
 
 El sistema debe pasar , el 80 %  de los UTs para ser considerado aceptable. Cualquier porcentaje menor no se encuentra en condiciones de entrega.
 
 El sistema debe cumplir con el 100 % de los STs para ser considerado aceptable. Cualquier porcentaje menor no se adecua a las condiciones de entrega.
 
-\subsection{\textcolor{orange}{Test de sistema }}
+\subsection{\textcolor[gray]{.2}{Test de sistema }}
 
 Al sistema se le realizarán las siguientes pruebas de sistema antes de la realización de una entega y cuyos resultados serán informados en su correpondiente Release Note
 
- %\subsubsection{\textcolor{orange}{Test de conexion Servidor }}
+ %\subsubsection{\textcolor[gray]{.2}{Test de conexion Servidor }}
 
- \subsubsection{\textcolor{orange}{Test de conexion Cliente.Adqisición }}
+ \subsubsection{\textcolor[gray]{.2}{Test de conexion Cliente.Adqisición }}
 
 \begin{enumerate}
 \item Requerimiento: sistema de manejo y registro de datos debe poder conectarse con uno o varios módulos de adquisición de datos por medio de una conexión serial u Ethernet.
 \item Propósito: Comprobar que el servidor recibe datos correctamente desde Arduino.
  
-\underline{\textcolor{orange}{Dependencias}}
+\underline{\textcolor[gray]{.8}{Dependencias}}
 
 \item Configuración: Se conecta el Arduino y se espera que le empiece a pedir datos el servidor.
 \item Inicialización: Se inicial una aplicación llamada servidor.
 \item Finalización: Dispositivo correctamente conectados se pueden leer los datos de temperatura en la base de datos.   
 \item Acciones: Se debe conectar el dispositivo de adquisición a la interfaz Ethernet del servidor, a continuación se lanza la aplicación servidor y se accede a la BD.
 
-\underline{\textcolor{orange}{Resultados}} 
+\underline{\textcolor[gray]{.8}{Resultados}} 
 
 \item Caso positivo: visualización de los datos de temperatura en la base de datos.
 \item Caso negativo: Cualquier error en la generación del proceso de conexión, no ver los resultados obtenidos en la base de datos.
 
 \end{enumerate}
 
- \subsubsection{\textcolor{orange}{Test de conexion Cliente.Vista }}
+ \subsubsection{\textcolor[gray]{.2}{Test de conexion Cliente.Vista }}
 \begin{enumerate}
 \item Requerimiento: El modulo de presentación de datos debe poder conectarse con un servidor vía conexión Ethernet.
 \item Propósito: Comprobar que el servidor envía el dato de temperatura correctamente a la placa iMx53 y es mostrado en pantalla.
 
-\underline{\textcolor{orange}{Dependencias}}
+\underline{\textcolor[gray]{.8}{Dependencias}}
 
 \item Configuración: Se conecta la placa iMx53 y se espera tener algún dato para extraer de el  buffer ubicado en el servidor.
 \item Inicialización: Se inicial una aplicación llamada servidor.
 \item Finalización: Dispositivo correctamente conectados se pueden leer los datos de temperatura en el monitor conectado a la placa iMx53.   
 \item Acciones :Se debe conectar el dispositivo de presentación a la interfaz Ethernet del servidor, a continuación se lanza la aplicación servidor y se observa el monitor conectado al la placa iMx53.
 
-\underline{\textcolor{orange}{Resultados}} 
+\underline{\textcolor[gray]{.8}{Resultados}} 
 
 \item Caso positivo: visualización de los datos de temperatura en el monitor.
 \item Caso negativo: Cualquier error en la generación del proceso de conexión, no ve el resultado recibido en la pantalla.
@@ -175,9 +175,9 @@ Al sistema se le realizarán las siguientes pruebas de sistema antes de la reali
 \end{enumerate}
 
 
- %\subsubsection{\textcolor{orange}{Test de envio de datos }}
+ %\subsubsection{\textcolor[gray]{.2}{Test de envio de datos }}
 
-%\section{\textcolor{orange}{Patrones Implementados}}
+%\\section{\\textcolor[gray]{.2}{Patrones Implementados}}
 
 
 
