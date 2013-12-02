@@ -1,5 +1,6 @@
-\chapter{\textcolor{orange}{ADD - ARCHITECTURAL DESIGN DOCUMENT}}
+\chapter{\textcolor[gray]{.8}{ADD - ARCHITECTURAL DESIGN DOCUMENT}}
 \newpage
+<<<<<<< HEAD
 %\section{\textcolor{orange}{Historial de Versiones}}
 %\begin{table}[!h]
 %\begin{center}
@@ -39,17 +40,58 @@
 %\newpage
 \section{\textcolor{orange}{Introducción}}
 \subsection{\textcolor{orange}{Propósito y Alcance}}
+=======
+\section{\textcolor[gray]{.2}{Historial de Versiones}}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[gray]{.8} Vesión & Fecha & Descripción de Cambios & Autor\\
+\hline
+1.0 & 15/09/2013 & Primera Versión & Lovaisa V.\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\newpage
+
+\section{\textcolor[gray]{.2}{Página de Aprobaciones}}
+A continuación se listan las personas de las cuales se requiere la aceptación de
+cualquier cambio mayor de este documento.
+\begin{enumerate}
+  \item Estas aprobaciones no son necesarias si el cambio es menor.
+  \item Estas aprobaciones son necesarias si el cambio es realizado por alguna
+  persona distinta de ellas.
+\end{enumerate}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[gray]{.8} Nombre & Cargo & Fecha & Firma\\
+\hline
+Lovaisa Valeria & Resp. Diseño Arquitectónico & 15/09/2013 & \\
+\hline
+Gomez Pablo & Resp. Suplente & 15/09/2013 & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+\section{\textcolor[gray]{.2}{Introducción}}
+\subsection{\textcolor[gray]{.2}{Propósito y Alcance}}
+>>>>>>> 3910ab7b9e4c32b7e12f785ce015e1bd7260973a
 Este documento cubre el diseño de la arquitectura  del sistema
 de monitoreo y registro de datos multipropósito. Este ADD tiene como objetivo
 esteblecer la arquitectura del sistema , sus componentes , patrones
 arquitéctonicos utilizados para luego ser implementados en la etapa de desarrollo.
 
-\subsection{\textcolor{orange}{Acrónimos y Glosario}}
+\subsection{\textcolor[gray]{.2}{Acrónimos y Glosario}}
 \begin{table}[!h]
 \begin{center}
 \begin{tabular}{|c|c|}
 \hline
-\rowcolor[RGB]{255,127,0} Acrónimo & Descripción \\
+\rowcolor[gray]{.8} Acrónimo & Descripción \\
 \hline
 ADD & Architectural Design Document – Documento de diseño de arquitectura\\
 \hline
@@ -62,12 +104,12 @@ Arquitectura)\\
 \end{center}
 \end{table}
 
-\subsection{\textcolor{orange}{Herramientas Necesarios}}
+\subsection{\textcolor[gray]{.2}{Herramientas Necesarios}}
 \begin{table}[!h]
 \begin{center}
 \begin{tabular}{|c|p{100mm}|}
 \hline
-\rowcolor[RGB]{255,127,0} Programa & Propósito \\
+\rowcolor[gray]{.8} Programa & Propósito \\
 \hline
 Dia & Software para la creación de diagramas UML \\
 \hline
@@ -75,6 +117,7 @@ Dia & Software para la creación de diagramas UML \\
 \end{center}
 \end{table}
 
+<<<<<<< HEAD
 %\newpage
 %\section{\textcolor{orange}{Roles}}
 %\subsection{\textcolor{orange}{Responsables}}
@@ -96,10 +139,36 @@ Dia & Software para la creación de diagramas UML \\
 %\end{tabular}
 %\end{center}
 %\end{table}
+=======
+\newpage
+\section{\textcolor[gray]{.2}{Roles}}
+\subsection{\textcolor[gray]{.2}{Responsables}}
+Las actividades de ingeniería de requerimientos del Sistema serán coordinadas en
+este proyecto por el Responsable de Requerimientos del sistema. (SRM). Este Rol
+debe ser asignado a alguno de los miembros del proyecto.
+El SRM será el responsable directo de las actividades de requerimientos del
+sistema, responder ante modificaciones en los mismos  y de mantener la
+documentación relacionada actualizada (Modificación de requerimientos , Matriz
+de Trazabilidad , Modificación del sistema de trackeo).
+
+
+\subsection{\textcolor[gray]{.2}{Roles}}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor[gray]{.8} Rol & Nombre & Suplente\\
+\hline
+ADM & Lovaisa Valeria & Gomez Pablo\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+>>>>>>> 3910ab7b9e4c32b7e12f785ce015e1bd7260973a
 
 \newpage
-\section{\textcolor{orange}{Diseño Preliminar}}
-\subsection{\textcolor{orange}{Diagrama Preliminar de Diseño de Arquitectura}}
+\section{\textcolor[gray]{.2}{Diseño Preliminar}}
+\subsection{\textcolor[gray]{.2}{Diagrama Preliminar de Diseño de Arquitectura}}
 \begin{figure}[h!]
  \begin{center}
   \includegraphics[width=1\textwidth,keepaspectratio=true]{./img/arqprelim.png}
@@ -108,7 +177,7 @@ Dia & Software para la creación de diagramas UML \\
  \end{center}
 \end{figure}
 
-\subsection{\textcolor{orange}{Descripción de la Arquitectura Preliminar}}
+\subsection{\textcolor[gray]{.2}{Descripción de la Arquitectura Preliminar}}
 Se seleccionó el patrón Cliente–Servidor para atacar el modelo de conexión de
 los dispositivos de adquision al servidor del sistema. El servidor será el
 encargado de correr las instancias necesarias para atender a cada dispositivo
@@ -141,8 +210,8 @@ de adqucion y presentación de datos, registrar datos en la base de tados
 adaptados para una lectura apropiada.
 
 \newpage
-\section{\textcolor{orange}{Contexto del sistema}}
-\subsection{\textcolor{orange}{Diagrama de Despliegue}}
+\section{\textcolor[gray]{.2}{Contexto del sistema}}
+\subsection{\textcolor[gray]{.2}{Diagrama de Despliegue}}
 \begin{figure}[h!]
  \begin{center}
   \includegraphics[width=1\textwidth,keepaspectratio=true]{img/Deployement.png}
@@ -151,7 +220,7 @@ adaptados para una lectura apropiada.
  \end{center}
 \end{figure}
 
-\subsection{\textcolor{orange}{Descripción del contexto del sistema}}
+\subsection{\textcolor[gray]{.2}{Descripción del contexto del sistema}}
 
 EL subsistema de Adquisición  de datos que se encuentra corriendo sobre una plataforma hardware arduino, envía datos de temperatura por medio de la interfaz Ethernet obtenidos mediante el instrumento adecuado para esto(sensor de temperatura),después de haberse identificado correctamente con el subsistema de manipulación y registro de datos el cual tendrá el rol de servidor sobre una plataforma hardware X86,donde se registran los datos de temperatura en una base de datos, mientras que el subsistema de presentación de datos que se encuentra corriendo en una plataforma hardware imx53 debidamente identificado con el servidor, es el encargado por medio de una conexión Ethernet, mostrar el dato de temperatura a través de un interfaz gráfica al usuario. 
 Esta decisión de arquitectura se basa en el requerimiento funcional que especifica que el subsitema de de adquisición, registro, manipulación y presentación de datos  deben cumplir con una arquitectura Cliente-Servidor. 
