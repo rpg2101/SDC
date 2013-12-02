@@ -1,41 +1,44 @@
 \chapter{\textcolor{orange}{SRS - SOFTWARE REQUERIMENTS SPECIFICATION}}
 \newpage
-%\section{\textcolor{orange}{Historial de Versiones}}
-%\begin{table}[H]
-%\begin{center}
-%\begin{tabular}{|c|c|c|c|}
-%\hline
-%\rowcolor[RGB]{255,127,0} Vesión & Fecha & Descripción de Cambios & Autor\\
-%\hline
-%1.0 & 09/07/2013 & Primera Versión & Gomez P.\\
-%\hline
-%\end{tabular}
-%\end{center}
-%\end{table}
-%\newpage
+\section{\textcolor{orange}{Historial de Versiones}}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[RGB]{255,127,0} Vesión & Fecha & Descripción de Cambios & Autor\\
+\hline
+1.0 & 09/07/2013 & Primera Versión & Gomez P.\\
+\hline
+1.1 & 01/12/2013 & LEL, Escenarios y Tarjetas CRC & Lovaisa V.\\
+\hline
 
-%\section{\textcolor{orange}{Página de Aprobaciones}}
-%A continuación se listan las personas de las cuales se requiere la aceptación de cualquier cambio mayor de este documento.
-%\begin{enumerate}
-  %\item Estas aprobaciones no son necesarias si el cambio es menor.
-  %\item Estas aprobaciones son necesarias si el cambio es realizado por alguna
-  %persona distinta de ellas.
-%\end{enumerate}
-%\begin{table}[!h]
-%\begin{center}
-%\begin{tabular}{|c|c|c|c|}
-%\hline
-%\rowcolor[RGB]{255,127,0} Nombre & Cargo & Fecha & Firma\\
-%\hline
-%Lovaisa Valeria & Resp. Ingeniería de Requerimientos & 09/07/2013 & \\
-%\hline
-%Gomez Pablo & Resp. Suplente & 09/07/2013 & \\
-%\hline
-%\end{tabular}
-%\end{center}
-%\end{table}
+\end{tabular}
+\end{center}
+\end{table}
+\newpage
 
-%\newpage
+\section{\textcolor{orange}{Página de Aprobaciones}}
+A continuación se listan las personas de las cuales se requiere la aceptación de cualquier cambio mayor de este documento.
+\begin{enumerate}
+  \item Estas aprobaciones no son necesarias si el cambio es menor.
+  \item Estas aprobaciones son necesarias si el cambio es realizado por alguna
+  persona distinta de ellas.
+\end{enumerate}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[RGB]{255,127,0} Nombre & Cargo & Fecha & Firma\\
+\hline
+Lovaisa Valeria & Resp. Ingeniería de Requerimientos & 09/07/2013 & \\
+\hline
+Gomez Pablo & Resp. Suplente & 09/07/2013 & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
 \section{\textcolor{orange}{Introducción}}
 \subsection{\textcolor{orange}{Propósito y Alcance}}
 Este documento cubre el proceso de elicitación de requerimientos del sistema
@@ -44,7 +47,7 @@ establecer cuales son los requerimientos del sistema a nivel de usuario, como
 así también a nivel de sistema (requerimientos detallados). 
 
 \subsection{\textcolor{orange}{Acrónimos y Glosario}}
-\begin{table}[!h]
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|c|}
 \hline
@@ -59,7 +62,7 @@ SRM & Software Requirements  Manager – Responsable de requerimientos del siste
 \end{table}
 
 \subsection{\textcolor{orange}{Herramientas Necesarios}}
-\begin{table}[!h]
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|p{100mm}|}
 \hline
@@ -217,7 +220,7 @@ El listado completo de requerimientos se encuentra gestionado en una planilla de
 cálculo opensource en Google Drive.
 
 
-\begin{table}[!h]
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|p{100mm}|}
 \hline
@@ -237,7 +240,7 @@ la implementación de cada uno de estos requerimientos en ese momento.
 Los requerimientos de funcionales de usuario de dividen en grupos , como
 muestra la siguiente tabla.
 
-\begin{table}[!h]
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|c|}
 \hline
@@ -275,7 +278,7 @@ correspondientes para cada tipo de requerimientos.
 %\end{table}
 
 Las asociaciones entre diagramas de casos de uso y requerimientos se encuentran
-documentados en la herramienta de gestion de requerimientos. 
+documentados en la herramienta de gestión de requerimientos. 
 
 %\begin{table}[!h]
 %\begin{center}
@@ -293,7 +296,7 @@ documentados en la herramienta de gestion de requerimientos.
 \newpage
 \subsection{\textcolor{orange}{Tabla de requerimientos - Lista maestra de
 requerimientos}} 
-\begin{table}[!h]
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{|p{30mm}|p{70mm}|p{30mm}|}
 \hline
@@ -342,7 +345,7 @@ enviar via conexión Ethernet cada 1 segundo los datos al modulo de presentacion
 
 \newpage
 
-\begin{table}[!h]
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{|p{30mm}|p{70mm}|p{30mm}|}
 \hline
@@ -432,27 +435,379 @@ acceder a las configuraciones por medio de usuario y contraseña & Presentación
 \end{figure}
 
 \subsection{\textcolor{orange}{LEL – Léxico Extendido del Lenguaje}}
-
-Se presenta en este apartado un listado de los requerimientos elecitados que tienen como objetivo comprender el dominio del problema y permiten
-	trabajar en la realización de una solución eficiente.
 	
-		\subsection{En cuanto al Hardware}
-		\begin{table}[h]
+		\begin{table}[h!]
 		\centering
 		\begin{tabular}{ p{4cm} |p{9.5cm} }
 		\hline 
 		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
 		\hline
-		Sinónimo  &   \\
+		Sinónimo  & Sensor DTH  \\
 		\hline
-		Noción &  \\
+		Noción & Entidad que adquiere y envía datos \\
 		\hline
-		Impacto & La placa de desarrollo elegida debe poseer al menos 32 MB de memoria RAM disponible que permita al ejecución del kernel de linux.\\
+		Impacto & Envía datos al sistema de adquisición en respuesta a una solicitud \\
 		\hline
 		\end{tabular}
-		\caption{LEL}
-		\label{tab:requsr1}
+		\caption{Entrada de LEL :  Sensor DTH }
+		%\label{tab:requsr1}
 		\end{table}
-					
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Sinónimo  & Sistema de adquisición  \\
+		\hline
+		Noción & Entidad que solicita, recibe y envía datos \\
+		\hline
+		Impacto & \begin{itemize}
+					 \item Solicita datos al sensor  
+					 \item Recibe datos del sensor 
+					 \item Establece conexión con el servidor
+					 \item Envía datos al sistema de manejo y registro de datos en respuesta a una solicitud
+					\end{itemize}\\
+		\hline
+		\end{tabular}
+		\caption{Entrada de LEL : Sistema de adquisición}
+		%\label{tab:requsr1}
+		\end{table}
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Sinónimo  & Sistema de manejo y registro de datos  \\
+		\hline
+		Noción & Entidad que recibe, convierte, almacena y reenvía datos  \\
+		\hline
+		Impacto & \begin{itemize}
+					 \item Solicita datos al sistema de adquisición   
+					 \item Recibe datos del sistema de adquisición
+					\item  Almacena datos en su base de datos
+					 \item Establece conexión con el sistema de adquisición y el sistema de presentación de datos
+					 \item Envía datos al sistema de presentación de datos en respuesta a una solicitud
+					\end{itemize}\\ 
+		\hline
+		\end{tabular}
+		\caption{Entrada de LEL :  Sistema de manejo y registro de datos }
+		%\label{tab:requsr1}
+		\end{table}
+
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Sinónimo  & Sistema de presentación de datos  \\
+		\hline
+		Noción & Entidad que recibe, convierte, almacena y reenvía datos  \\
+		\hline
+		Impacto & \begin{itemize}
+					 \item Solicita datos al sistema de manejo y registro   
+					 \item Recibe datos del sistema de manejo y registro
+					 \item Establece conexión con el sistema de manejo y registro de datos
+					 \item Envía condiciones de alarmas al sistema de registro y manejo de datos.
+					\end{itemize}\\ 
+		\hline
+		\end{tabular}
+		\caption{Entrada de LEL : Sistema de manejo y registro de datos}
+		%\label{tab:requsr1}
+		\end{table}
+
+		\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Sinónimo  & Usuario  \\
+		\hline
+		Noción &   Entidad que consulta datos en el sistema de presentación\\
+		\hline
+		Impacto & 	\begin{itemize}
+						\item Visualiza datos en el módulo de presentación
+						\item Visualiza señales de alarma ante datos fuera de rango
+					\end{itemize}\\
+		\hline
+		\end{tabular}
+		\caption{Entrada de LEL : Usuario}
+		%\label{tab:requsr1}
+		\end{table}
+
+
+		\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Sinónimo  & Administrador  \\
+		\hline
+		Noción &   Entidad que configura los sistemas de adquisición, manejo \& registro y presentación de datos\\
+		\hline
+		Impacto & 	\begin{itemize}
+						\item Ajusta parámetros de adquisición : Intervalo de adquisición , sensores conectados, etc.
+						\item Configura parámetros de manejo y registro: Ajusta unidades de medida registrada, intervalo de registro , etc.
+						\item Establece parámetros de presentación: Puntos máximos y mínimos de alarmas, unidad de medida presentada, sensores presentados, etc.
+					\end{itemize}\\
+		\hline
+		\end{tabular}
+		\caption{Entrada de LEL : Administrador}
+		%\label{tab:requsr1}
+		\end{table}
+
+\subsection{\textcolor{orange}{Escenarios}}
+
+		\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Título  & Adquirir dato\\
+		\hline
+		Objetivo &  Adquirir dato del sensor al módulo de adquisición presente en Arduino \\
+		\hline
+		Contexto & Conexión establecida entre el sensor y el sistema de adquisición\\
+		\hline
+		Recursos &  Sensor y Arduino (Módulo de adquisición)\\
+		\hline
+		Actores &  Sensor , Sistema de adquisición\\
+		\hline
+		Episodios &  \begin{itemize}
+						\item El sistema de adquisición establece conexión con el sensor conectado
+						\item El sist. de adquisición solicita un dato al sensor conectado
+						\item El sensor envía el dato solicitado al sistema de adquisición
+						\item El sistema de adquisición recibe el dato del sensor.
+					\end{itemize} \\		
+		\hline
+		\end{tabular}
+		\caption{Escenario : Adquirir dato}
+		%\label{tab:requsr1}
+		\end{table}
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Título  & Recibir y registrar dato\\
+		\hline
+		Objetivo &  Recibir dato del módulo de adquisición y registrarlo en la base de datos \\
+		\hline
+		Contexto & Conexión establecida entre el módulo de adquisición y el sistema de manejo y registro de datos\\
+		\hline
+		Recursos &  Sistema de adquisición,Sistema de manejo y registro de datos, Base de datos\\
+		\hline
+		Actores & Sistema de adquisición, Sistema de manejo y registro\\
+		\hline
+		Episodios &  \begin{itemize}
+						\item El sistema de manejo y registro establece conexión con el sistema de adquisición
+						\item El sist. de manejo y registro solicita un dato al sistema de adquisición
+						\item El sistema de adquisición envía el dato solicitado al sistema de manejo y registro
+						\item El sistema de Manejo y registro recibe el dato, lo adapta y almacena en la base de datos.
+					\end{itemize} \\	
+		\hline
+		\end{tabular}
+		\caption{Escenario : Recibir y registrar dato}
+		%\label{tab:requsr1}
+		\end{table}
+
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Título  & Presentar datos\\
+		\hline
+		Objetivo &  Presentar al usuario los datos obtenidos del sistema de manejo y registro\\
+		\hline
+		Contexto & Conexión establecida entre el módulo de manejo \& registro y el sistema de presentación\\
+		\hline
+		Recursos &  Sistema de manejo y registro de datos, sistema de presentación\\
+		\hline
+		Actores & Sistema de manejo y registro, sistema de presentación, usuario\\
+		\hline
+		Episodios &  \begin{itemize}
+						\item El sistema de presentación establece conexión con el sistema de manejo y registro
+						\item El sistema de presentación solicita un dato al sistema de manejo y registro
+						\item El sistema de manejo y registro envía el dato solicitado al sistema de presentación
+						\item El sistema de presentación recibe el dato, lo adapta y lo presenta al usuario gráficamente.
+					\end{itemize} \\	
+		\hline
+		\end{tabular}
+		\caption{Escenario: Presentar dato}
+	%\label{tab:requsr1}
+		\end{table}
+
+\subsection{\textcolor{orange}{Tarjetas CRC}}
+
+Con lo planteado anteriormente en LEL y los escenarios planteados se generan las siguientes clases candidatas:
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Tarjeta CRC primaria & ServidorManejoyRegistro \\
+		\hline
+		Responsabilidades & \begin{itemize}
+								\item Solicita el envío de datos al sistema de adquisición 
+								\item Recibe datos del sistema de adquisición
+								\item Almacena datos en su base de datos
+								\item Establece conexión con el sistema de adquisición el sistema de presentación de datos
+								\item Envía datos al sistema de presentación de datos en respuesta a una solicitud
+							 \end{itemize} \\	
+		\hline
+		Colaboradores&  Sistema de adquisición , sistema de presentación de datos\\
+
+		\hline
+		\end{tabular}
+		\caption{CRC primaria ServidorManejoyRegistro}
+	%\label{tab:requsr1}
+		\end{table}
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Tarjeta CRC primaria & ClientePresentación\\
+		\hline
+		Responsabilidades & \begin{itemize}
+							\item Solicita datos al sistema de manejo y registro
+							\item Recibe datos del sistema de manejo y registro
+							\item Establece conexión con el sistema de manejo y registro de datos
+							\item Envía condiciones de alarmas al sistema de registro
+y manejo de datos								
+							 \end{itemize} \\	
+		\hline
+		Colaboradores& sistema de manejo y registro de datos, administrador y usuario\\
+
+		\hline
+		\end{tabular}
+		\caption{CRC primaria ClientePresentación}
+	%\label{tab:requsr1}
+		\end{table}
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Tarjeta CRC secundarias & ClienteConexión\\
+		\hline
+		Responsabilidades & \begin{itemize}
+								\item Establecer la conexión con el sistema de registro y manejo de datos
+								\item Envío de datos datos al sistema de registro y manejo de datos
+							 \end{itemize} \\	
+		\hline
+		Colaboradores&  Sensor, sistema de adquisición \\
+
+		\hline
+		\end{tabular}
+		\caption{CRC secundaria ClienteConexión}
+	%\label{tab:requsr1}
+		\end{table}
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Tarjeta CRC secundaria & ConexiónServidor\\
+		\hline
+		Responsabilidades & \begin{itemize}
+								\item Establecer la conexión con el sistema de adquisición
+								\item Establecer la conexión con el sistema de presentación
+								\item Recibir datos del sistema de adquisición
+								\item Enviar datos al módulo de presentación
+							 \end{itemize} \\	
+		\hline
+		Colaboradores& Sistema de manejo y registro , Sistema de adquisición\\
+
+		\hline
+		\end{tabular}
+		\caption{Tarjeta CRC secundaria ConexiónServidor}
+	%\label{tab:requsr1}
+		\end{table}
+
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Tarjeta CRC secundaria & BaseDeDatos\\
+		\hline
+		Responsabilidades & \begin{itemize}
+								\item Establecer conexión con el gestor de base de datos
+								\item Registrar datos recibidos del sistema de adquisición
+								 \end{itemize} \\	
+		\hline
+		Colaboradores& Sistema de adquisición \\
+
+		\hline
+		\end{tabular}
+		\caption{Tarjeta CRC secundaria BaseDeDatos}
+	%\label{tab:requsr1}
+		\end{table}
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Tarjeta CRC secundaria & ConexiónClienteVista\\
+		\hline
+		Responsabilidades & \begin{itemize}
+								\item Establecer conexión con el sistema de manejo y registro
+								\item Recibir datos del sistema de manejo y recepción
+								\item Enviar mensajes de estado de alarmas al sistema de manejo y registro de datos
+							 \end{itemize} \\	
+		\hline
+		Colaboradores& Sistema de presentación , Sistema de manejo y registro\\
+		\hline
+
+		\end{tabular}
+		\caption{Escenario: Presentar dato}
+	%\label{tab:requsr1}
+		\end{table}
+
+
+\begin{table}[h!]
+		\centering
+		\begin{tabular}{ p{4cm} |p{9.5cm} }
+		\hline 
+		 \multicolumn{2}{>{\columncolor[gray]{.8}}c}{}\\
+		\hline
+		Tarjeta CRC secundaria & VistaDatos\\
+		\hline
+		Responsabilidades & \begin{itemize}
+								\item Mostrar gráficamente los datos recibidos del módulo de manejo y registro
+								\item Mostrar estado de alarmas de valor mínimo y máximo
+								 \end{itemize} \\	
+		\hline
+		Colaboradores& Sistema de presentación \\
+
+		\hline
+		\end{tabular}
+		\caption{Tarjeta CRC secundaria VistaDatos}
+	%\label{tab:requsr1}
+		\end{table}
 
 
